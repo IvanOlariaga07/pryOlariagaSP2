@@ -28,10 +28,12 @@ namespace pryOlariagaSP2
                 MessageBox.Show("Debe seleccionar un ticket", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
               else
               {
-                // Agregar el ticket a la lista
-                lstRegistro.Items.Add(cmbTickets.SelectedItem.ToString());
-                cmbTickets.SelectedIndex = -1;
-              }
+               lstRegistro.Items.Add("Ticket N°: " + txtNumero.Text + " - Tipo: " + cmbTickets.SelectedItem.ToString() + " - Fecha: " + DateTime.Now.ToString("yyyy-MM-dd"));
+               txtNumero.Clear();
+               cmbTickets.Text = "";
+                }
+                    
+              
             }
 
 
