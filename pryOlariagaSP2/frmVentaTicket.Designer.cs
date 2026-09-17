@@ -39,33 +39,35 @@
             // 
             // txtNumero
             // 
-            this.txtNumero.Location = new System.Drawing.Point(121, 50);
+            this.txtNumero.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtNumero.Location = new System.Drawing.Point(151, 97);
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(163, 20);
             this.txtNumero.TabIndex = 0;
             // 
             // dtmFecha
             // 
-            this.dtmFecha.Location = new System.Drawing.Point(101, 12);
+            this.dtmFecha.Location = new System.Drawing.Point(134, 3);
             this.dtmFecha.Name = "dtmFecha";
             this.dtmFecha.Size = new System.Drawing.Size(213, 20);
             this.dtmFecha.TabIndex = 1;
             // 
             // cmbTickets
             // 
+            this.cmbTickets.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.cmbTickets.FormattingEnabled = true;
             this.cmbTickets.Items.AddRange(new object[] {
             "- Básico",
             "- Estándar",
             "-Premium"});
-            this.cmbTickets.Location = new System.Drawing.Point(121, 90);
+            this.cmbTickets.Location = new System.Drawing.Point(151, 123);
             this.cmbTickets.Name = "cmbTickets";
             this.cmbTickets.Size = new System.Drawing.Size(163, 21);
             this.cmbTickets.TabIndex = 2;
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(234, 133);
+            this.btnRegistrar.Location = new System.Drawing.Point(256, 164);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(80, 24);
             this.btnRegistrar.TabIndex = 3;
@@ -76,7 +78,7 @@
             // lstRegistro
             // 
             this.lstRegistro.FormattingEnabled = true;
-            this.lstRegistro.Location = new System.Drawing.Point(23, 163);
+            this.lstRegistro.Location = new System.Drawing.Point(45, 194);
             this.lstRegistro.Name = "lstRegistro";
             this.lstRegistro.Size = new System.Drawing.Size(291, 82);
             this.lstRegistro.TabIndex = 4;
@@ -84,16 +86,19 @@
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(47, 53);
+            this.lblNombre.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblNombre.Location = new System.Drawing.Point(54, 97);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(67, 13);
+            this.lblNombre.Size = new System.Drawing.Size(73, 13);
             this.lblNombre.TabIndex = 5;
-            this.lblNombre.Text = "Nº de Ticket";
+            this.lblNombre.Text = "Nº de Ticket: ";
+            this.lblNombre.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblTipo
             // 
             this.lblTipo.AutoSize = true;
-            this.lblTipo.Location = new System.Drawing.Point(32, 93);
+            this.lblTipo.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblTipo.Location = new System.Drawing.Point(54, 126);
             this.lblTipo.Name = "lblTipo";
             this.lblTipo.Size = new System.Drawing.Size(82, 13);
             this.lblTipo.TabIndex = 6;
@@ -103,6 +108,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::pryOlariagaSP2.Properties.Resources.descarga;
             this.ClientSize = new System.Drawing.Size(350, 318);
             this.Controls.Add(this.lblTipo);
             this.Controls.Add(this.lblNombre);
